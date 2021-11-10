@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommunityToolkit.WinUI.Notifications;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,16 @@ namespace WPF_MSIX_Detect
             var helpers = new Helpers();
             var res = helpers.IsRunningInMSIXContainer();
             txtResult.Text = res ? "Running in MSIX Container" : "Not running in MSIX Container";
+            btnShowToast.IsEnabled = res;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new ToastContentBuilder()
+                .AddText("Hey look")
+                .AddText("A toast notification from a WPF App!")
+                .AddHeroImage(new Uri("https://picsum.photos/360/202"))
+                .Show();
         }
     }
 }

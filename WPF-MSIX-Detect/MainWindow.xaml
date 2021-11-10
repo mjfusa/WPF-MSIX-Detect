@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:WPF_MSIX_Detect"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
-    <StackPanel >
+    <StackPanel HorizontalAlignment="Center">
         <TextBlock x:Name="txtResult"  Margin="20" HorizontalAlignment="Center"/>
-        <WebBrowser Source="https://source.unsplash.com/random/500x500?sig=1" Height="500"/>
+        <Button x:Name="btnShowToast"  Content="Show Toast Notification" Click="Button_Click"/>
     </StackPanel>
 </Window>

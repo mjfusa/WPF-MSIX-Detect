@@ -7,12 +7,12 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="fe0c3cd6-9f35-4085-8aef-ca42c79e3f68"
+    Name="WPFMSIXDetect"
     Publisher="CN=mikefra"
     Version="1.0.0.0" />
 
   <Properties>
-    <DisplayName>WPF-MSIX-Detect.Package</DisplayName>
+    <DisplayName>WPF MSIX Detect</DisplayName>
     <PublisherDisplayName>mikefra</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
@@ -31,12 +31,12 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="WPF-MSIX-Detect.Package"
+        DisplayName="WPF MSIX Detect"
         Description="WPF-MSIX-Detect.Package"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png"  Square71x71Logo="Images\SmallTile.png"/>
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
