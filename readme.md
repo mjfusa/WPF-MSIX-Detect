@@ -22,7 +22,7 @@ If running in an MSIX container, the app will have a package name. Use Win32 [Ge
 
 This samples uses the .NET Target Framework Moniker (TFM) ```net6.0-windows10.0.19041.0```. This will pull in the necessary dependencies to call Windows Runtime APIs.
 
-Here is a toast notification displayed form the app:
+Here is a toast notification displayed from the app:
 
 ![toast](./ToastNotification.png)
 
