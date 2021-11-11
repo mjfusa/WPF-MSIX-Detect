@@ -1,6 +1,6 @@
 # Sample: Detect if app is running in an MSIX Container
 
-Many Windows developers are transitioning from packaging their apps with MSI to [MSIX](https://aka.ms/msix). The simplified installed process, automatic updates and increased app security are a few reason why developers are making this change.
+Many Windows developers are transitioning from packaging their apps with MSI to [MSIX](https://aka.ms/msix). The simplified installed process, automatic updates and increased app security are a few reasons why developers are making this change.
 
 ## Applications in transition to MSIX
 
@@ -16,9 +16,7 @@ This sample demonstrates how to detect if the app is running in a MSIX container
 
 ## Detecting if running in an MSIX container 
 
-If running in an MSIX container, the app will have an identity. 
-Use Win32 [GetCurrentPackageFullName](https://docs.microsoft.com/en-us/windows/win32/api/appmodel/nf-appmodel-getcurrentpackagefullname) API to determine if app has identity.
-Alternatively, you can call the Windows Runtime API [Package.Current](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.package.current). This API throws an exception if not running in an MSIX container.
+If running in an MSIX container, the app will have a package name. Use Win32 [GetCurrentPackageFullName](https://docs.microsoft.com/en-us/windows/win32/api/appmodel/nf-appmodel-getcurrentpackagefullname) API to determine if app has package name. Alternatively, you can call the Windows Runtime API [Package.Current](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.package.current). This API throws an exception if the app does not have a package.
 
 ## .NET 5 and 6 and Windows Runtime.
 
